@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Maaitrayo</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Maaitrayo Das</span><br> CS Engineer</h1>
+
+                    <a href="mailto:dasmaaitrayo@gmail.com" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/maaitrayodas/" target="blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/maaitrayo02/" target="balnk" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/Maaitrayo" target="blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/prefil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Maaitrayo</h2>
+                        <p class="about__text">I am currently a third year student, perusing B.TECH in Computer Science and Engineering. I am a python developer and an open-source contributer. A reasearcher, a software Engineer, Web and App developer.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text"><aside>My main domain of work is Computer Vision and OpenCV. I have learnt languages like PYTHON, JAVA, C, C++. opencv for python and opencv for c++. I have also used OPEN3D as python 3D processing library and PANGOLIN for C++ related 3D processing.</aside></p>
+                        <br>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAs9JREFUSEuVluF9GjEMxf+aIGwAnaAwAWSDbgAjtBMAE7QjNBM0mSDtBEkm6I0AE7g/2b47+Swf1J/AZ1vW03tPFoYhQMj/7O9xhf5qf7n1sTxazylPq05uhXLmW3sbS52cZ/Ny1wthwMti5OMoEbkb+Lmfd1qXfOgV5H0MXF7aT6EPXJaxdZMvwBFYp+XVkc8IZwLv1XHORMr49tAMX4EnYAVsh9Bl/AuwEeh6ms7B7jJ5ks8pZSsCYYfwOgBdX/ob8KOfbmnFZNyqTZzPgfkNLEa4PcTlLIRTIcx89BhhUuMZLh8QDlPaCmwdSM+AXnR2KHYt1JRMn137GDMYMjPrNHCHsMwXfULonEuPW/IlFoRIpBZ7Sx3XMJ4zD7YaTOASYAPSRWc066eG8BPYt/TXslWzXjNWFUTm56FqOFgVenK6gDyMARoi9PSSlj4CevnlZGcRaxp4jfBW1uMeJxoU+UFAufHXQpotbgOjuRSWKbALySiKMVpj3KiS8jpLl03mucEPRSLvTaUerhtJkQNPavySaiRHIaybKAu7qUSMdh8hDJeuoYa3aT5ZVkqQdUvrVpalUQxdy4G6hE799sEg8ZGd69esI5iP1eWEKyE6XoFvCXZkpOwNq//k2mhnmh+ONeZzziAnqxRPTnozJdEyM7MO7ODtZNlbou5XpiuSfsZmXoOrPy8I0glhFVJ3YvLSUKZGhtuHQPydbqLB3P7sZezBeUI4lox19J2m/rdJtPCL831brN8dadtL9uQ9cBYo26IVbO3VFTNs5l+B747M+jW9OWgXMP3YnlmWqQF1lb3WXJ3JyszWW+uo9VQD+pTXliItCui9Mq0TlNVeqSSEoLY6aQByja4knIbH3qzTpEfUHGdGT7YHpU0LCIvU5O9rJFN3G0pfvY2rYC3/aAVuC97U+IYr+A5h+eok4Hw2U6Vltsjdqpk1kHv25jX/AIlRJjNEZQc7AAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-c++ skills__icon'></i> -->
+                                <img src="https://visualpharm.com/assets/4/C++-595b40b65ba036ed117d3edb.svg" alt="">
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-javascript skills__icon' ></i> -->
+                                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt=""> -->
+                                <span class="skills__name">C</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAuFJREFUSEuVlo2x0zAQhL+rAFMBfhWQEkIHKSEdECogVJDQQToAKuBRAaECQgUvVCBmLdk+2ZJjPJMZx/q5u9XunoziY0AYRsZ/+ffZ0jRcnp8P6l96Cpv6ud27YQSX0iT0Yl75Zi5wLf6qKhuD+4jRQjEuDNSLLZ+E/xrXHqH7ldGf7S/k3OPPZoS0XnFCvw98AW6PM40z5lDXGDNMnwHaAF+B7dqgXeAHJ7iQxrDyAnaFcO6PrIBsJxKHUA3qWu4Zq1XpKaJm+7Rzkyh/z3aocGiFkmcsbYEvwC+MPYHW4BAi5M9rII9Q1/Auf98A34FvwD4F3gM7jPsg8hUqzBOcmcYs/xvGlcDOYBeMI4HNzK1WBa6xwXtKnKNqfwJPSTrPGM/ScTnOshRzA1k0E2uM8JIIqrQUWB76zi+rvU89owD14lLJRlWKSAeME8E+QTiW5FTjUDSQReHl+ktZyqUOgGQjt9JvMJBF2B2Hag5bV4Uhve6AC8ZBckqJ1P0tg8OScz22L0lF5FJl15SRDEQVq3IhkEyjMxmxfav5Bud515p4dUESqkyBXmKAwbmmqcpA2iBDiSbSP0pUyPTJDgOuSeRN3u0sGFuMDcEafzNx56tq0+bDSiGiwFrfoZFRdqX+tMlH4MNYTLZS430gTdG7+rOS0TGMZ5+R67HwtJE2kIH8nrBuA/YHgiA+Q4eKGC7PrvbnDOoRxmXHCVE6UUYFKdbuZdP6PBCF9+HTjsD7WFXP4O7g2iSnz1mTeNCilivu9GpvIfxI59Z3oQ2BV8Df1DB0loLWM3oSOofGOVcGhDz5lDw5OtT/mnHU93kmUYdpCV5JQJC2YAGCqpEkomzy5DWnTef6ephnXFI3Exr5jWS4c9WcfATrDcaTuzH0ruXhFNuj5mPbbMAuEHLzKHm1h6XAzK0qS3erW7pp9IH6BHpkZk415VqFXH7aYyNfInDNoFzgpWY0McoVUomNoZ70P4DBIjLPO/5zAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work2.1.jpg" alt="" class="skills__img">
+                    </div>
+                    <div>
+                        <!-- <h2 class="skills__subtitle">Profesional Skills</h2> -->
+                        <p class="skills__text"><aside>I have also done wed development and have experience in HTML, CSS, JAVASCRIPT. I have worked on windows and linux. Used Google collab and jupyter notebook.</aside></p>
+                        <br>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work2.2.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://www.linkedin.com/posts/maaitrayodas_development-javascript-parking-ugcPost-6898313289487536128-UreV?utm_source=linkedin_share&utm_medium=member_desktop_web" target="blank" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/posts/maaitrayodas_selfdrivingcars-selfdevelopment-softwaredevelopment-ugcPost-6885593477443395584-HKh5?utm_source=linkedin_share&utm_medium=member_desktop_web" target="blank" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/posts/tivra-ai_stereo-visual-odometry-experiment-ugcPost-6866232890829660160-pBJt?utm_source=linkedin_share&utm_medium=member_desktop_web" target="blank" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/posts/maaitrayodas_ai-artificialintelligence-machinelearning-ugcPost-6848253354670342144-cUSY?utm_source=linkedin_share&utm_medium=member_desktop_web" target="blank" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/Maaitrayo/3D-reconstruction-from-Stereo-image" target="blank" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/Maaitrayo/video-to-image-converter" target="blank" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <a href="mailto:dasmaaitrayo@gmail.com"> <input type="button" value="Submit" class="contact__button button"> </a>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Maaitrayo Das</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/maaitrayo02/" target="blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
